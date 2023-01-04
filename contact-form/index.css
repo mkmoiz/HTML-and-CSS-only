@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box ;
+}
+body{
+
+font-family: 'Roboto';
+
+
+}
+h2{
+    color:white;
+
+    position: relative;
+    padding-bottom:15px;
+    margin-bottom: 20px;
+}
+
+h2:after{
+    content:'';
+    position:absolute;
+    left: 50%;
+    bottom:0;
+    transform: translateX(-50%);
+    height:4px;
+    width:50px;
+    background-color:yellow;
+    border-radius:2px;
+    font-size: 1.1rem;
+
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+
+}
+
+.container:after{
+    content:'';
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url("stars.jpg") no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(10px);
+    box-shadow: rgba(1, 1, 1, 1.19);
+
+}
+
+
+.content-box{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center ;
+    align-content: center;
+    text-align: center;
+    background-color:#000000;
+    
+}
+
+.left{
+    background:url("stars.jpg") no-repeat center;
+background-size: cover;
+    height: 100%;
+}
+.right{
+    padding:50px 25px;
+}
+
+
+.field{
+    width: 100%;
+    padding:0.5rem 1rem;
+    outline:none;
+    border:2px solid black;
+    font-size:1.1rem;
+    margin-bottom:22px;
+    transition: .3s;
+
+}
+
+.field:hover{
+    background-color:#fff;
+}
+.field:focus{
+    background-color:lightgray;
+
+
+}
+
+.btn{
+    
+    width:100%;
+    outline:none;
+    border:none;
+    background-color: yellow;
+padding:0.5rem 1rem;   
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+  font-size:1.1rem;
+}
